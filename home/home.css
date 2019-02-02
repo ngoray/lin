@@ -15,3 +15,23 @@ body {font-size:16px;}
 html {
   scroll-behavior: smooth;
 }
+
+#parent{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#child{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
